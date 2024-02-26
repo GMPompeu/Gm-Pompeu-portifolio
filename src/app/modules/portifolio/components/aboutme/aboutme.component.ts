@@ -6,18 +6,18 @@ import { DialogResumeComponent } from '../dialogs/dialog-resume/dialog-resume.co
 @Component({
   selector: 'app-aboutme',
   standalone: true,
-  imports: 
+  imports:
   [
     MatDialogModule,
     DialogResumeComponent,
-    
+
   ],
   templateUrl: './aboutme.component.html',
   styleUrl: './aboutme.component.scss'
 })
 export class AboutmeComponent {
   constructor(public dialog: MatDialog){}
-  
+
   openDialog(){
     this.dialog.open(DialogResumeComponent)
   }

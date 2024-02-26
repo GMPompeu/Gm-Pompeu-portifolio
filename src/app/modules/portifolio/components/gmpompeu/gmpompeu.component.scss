@@ -1,12 +1,13 @@
 .resume{
     font-family: 'Poppins', sans-serif;
-    margin-top: 15rem;
+    margin-top: 12rem;
 }
 .resume h1{
     color: #fff;
     font-family: 'Open Sans', sans-serif ;
     font-weight: bold;
     font-size: 65px;
+    margin-bottom: 25px;
 }
 .resume span{
     color: #fff;
@@ -29,7 +30,7 @@
 }
 .actions li{
     margin-top: 4%;
-    margin-right: 5%;
+    margin-right: 2%;
 }
 .actions a{
     color: #fff;
@@ -59,14 +60,15 @@
 }
 .me img{
     border-radius: 50%;
-    max-width: 80%;
-    opacity: 0.3;
-    scale: 1.4;
+    max-width: 60%;
+    opacity: 0.2;
+    scale: 1.6;
     transition: 1.5s;
+    margin-left: 100px;
 }
 
 .me img:hover{
     opacity: 1;
-    scale: 1.5;
+    scale: 1.8;
 }
 

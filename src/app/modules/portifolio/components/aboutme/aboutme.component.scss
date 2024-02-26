@@ -1,23 +1,23 @@
 .container1 {
-    display: flex; 
-    align-items: center; 
+    display: flex;
+    align-items: center;
 }
-  
+
 .imgabout {
-    flex: 0 40%; 
+    flex: 0 35%;
 }
-  
+
 .imgabout img {
-    border-radius: 100%; 
-    width: 100%; 
+    border-radius: 100%;
+    width: 100%;
 }
-  
+
 .aboutme {
-    flex: 1; 
+    flex: 1;
     color: #fff;
     font-family: 'Poppins', sans-serif;
 }
-  
+
 .aboutme h1 {
     font-size: 50px;
 }
@@ -26,7 +26,7 @@
     margin-bottom: 5px;
 }
 .aboutme p {
-    width: 80%; 
+    width: 80%;
 }
 hr{
     width: 50%;
