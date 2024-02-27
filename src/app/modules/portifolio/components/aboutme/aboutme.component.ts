@@ -1,8 +1,6 @@
-import { Dialog } from '@angular/cdk/dialog';
 import { Component } from '@angular/core';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { DialogResumeComponent } from '../dialogs/dialog-resume/dialog-resume.component';
-import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
   selector: 'app-aboutme',
