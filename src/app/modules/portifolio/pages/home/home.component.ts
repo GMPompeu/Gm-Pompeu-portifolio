@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { HeaderComponent } from '../../components/header/header.component';
 import { AboutmeComponent } from '../../components/aboutme/aboutme.component';
 import { GmpompeuComponent } from '../../components/gmpompeu/gmpompeu.component';
@@ -6,12 +6,12 @@ import { GmpompeuComponent } from '../../components/gmpompeu/gmpompeu.component'
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: 
+  imports:
   [
-    HeaderComponent, 
-    AboutmeComponent, 
+    HeaderComponent,
+    AboutmeComponent,
     GmpompeuComponent,
-    
+
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'

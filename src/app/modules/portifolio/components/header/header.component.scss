@@ -14,16 +14,14 @@ nav{
     z-index: 1;
 }
 ul{
-    list-style: none;
-    color: #ffffff59;
     display: flex;
-    height: 100%;
     cursor: pointer;
     align-items: center;
 }
 ul li{
-    margin-right: 3rem;
-    padding: 20px 0px;
+  list-style: none;
+  margin-right: 3rem;
+  padding: 20px 0px;
 }
 
 .contact a{
@@ -36,11 +34,28 @@ ul li{
     border: solid 3px #043E8B;
 }
 
+a{
+  text-decoration: none;
+  list-style: none;
+  color: #ffffff59;
+  list-style: none;
+  padding: 20px 0px;
+}
+
+
 ul li:hover {
     color: #fff;
-    border-bottom: 3px solid #043E8B;
+    border-bottom: 5px solid #043E8B;
 }
 
 .contact a:hover{
     background-color: #043E8B;
+}
+a:hover{
+  color: #fff;
+}
+
+.header-scroll {
+  background-color: #043E8B;
+  transition: background-color 0.3s ease;
 }

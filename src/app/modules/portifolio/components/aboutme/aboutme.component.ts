@@ -1,29 +1,24 @@
 import { Dialog } from '@angular/cdk/dialog';
 import { Component } from '@angular/core';
-import {MatDialog, MatDialogModule} from '@angular/material/dialog';
+import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { DialogResumeComponent } from '../dialogs/dialog-resume/dialog-resume.component';
+import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
   selector: 'app-aboutme',
   standalone: true,
-  imports:
-  [
-    MatDialogModule,
-    DialogResumeComponent,
-
-  ],
+  imports: [MatDialogModule, DialogResumeComponent],
   templateUrl: './aboutme.component.html',
-  styleUrl: './aboutme.component.scss'
+  styleUrl: './aboutme.component.scss',
 })
 export class AboutmeComponent {
   constructor(public dialog: MatDialog){}
 
-  openDialog(){
-    this.dialog.open(DialogResumeComponent)
+  openDialog() {
+    this.dialog.open(DialogResumeComponent);
   }
 
-  closeDialog(){
+  closeDialog() {
     this.dialog.closeAll();
   }
-
 }
