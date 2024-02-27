@@ -22,6 +22,7 @@ ul li{
   list-style: none;
   margin-right: 3rem;
   padding: 20px 0px;
+  color: #ffffff59;
 }
 
 .contact a{
@@ -34,15 +35,6 @@ ul li{
     border: solid 3px #043E8B;
 }
 
-a{
-  text-decoration: none;
-  list-style: none;
-  color: #ffffff59;
-  list-style: none;
-  padding: 20px 0px;
-}
-
-
 ul li:hover {
     color: #fff;
     border-bottom: 5px solid #043E8B;
@@ -51,11 +43,14 @@ ul li:hover {
 .contact a:hover{
     background-color: #043E8B;
 }
-a:hover{
-  color: #fff;
-}
+
 
 .header-scroll {
   background-color: #043E8B;
   transition: background-color 0.3s ease;
+}
+
+ul li.active {
+  color: #fff;
+  border-bottom: 5px solid #043E8B;
 }
