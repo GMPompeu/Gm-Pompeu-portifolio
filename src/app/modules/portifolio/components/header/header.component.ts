@@ -10,43 +10,40 @@ import { Component, ElementRef, HostListener } from '@angular/core';
 })
 export class HeaderComponent {
   constructor() {}
-  currentPage: string = 'aboutme' ;
+  currentPage: string = 'home';
 
-  ngOnInit(){
+  ngOnInit() {
+    this.updateCurrentPage(this.currentPage)
     this.checkeScroll();
   }
 
   @HostListener('window:scroll', [])
-  checkeScroll(){
+  checkeScroll() {
     const sections = document.querySelectorAll('section');
 
-    sections.forEach(sections =>{
+    sections.forEach((sections) => {
       const sectionId = sections.getAttribute('id');
       const sectionOffset = sections.getBoundingClientRect().top;
 
-      if(sectionOffset <= 50 && sectionId !== null){
-        this.updateCurrentPage(sectionId)
+      if (sectionOffset <= 100 && sectionId !== null) {
+        this.updateCurrentPage(sectionId);
       }
-    })
+    });
   }
-
 
   //Header click action -------------------------------------------------
-  updateCurrentPage(page: string){
-    this.currentPage = page
+  updateCurrentPage(page: string) {
+    this.currentPage = page;
   }
 
-  scrollElement(elementId: string ): void {
-    if (typeof elementId === 'string') {
-      const element = document.getElementById(elementId);
-      const active = document.getElementsByClassName(elementId);
-      if (element) {
-        this.updateCurrentPage(elementId)
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
-    }else if (typeof elementId === 'number'){
-      this.updateCurrentPage(elementId)
-      window.scrollTo({top: elementId, behavior: 'smooth'})
+  scrollElement(elementId: string): void {
+    const element = document.getElementById(elementId);
+    if (elementId === '0') {
+      this.updateCurrentPage(elementId);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else if (element) {
+      this.updateCurrentPage(elementId);
+      element.scrollIntoView({ behavior: 'smooth' });
     }
   }
 }
