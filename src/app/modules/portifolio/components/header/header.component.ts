@@ -10,18 +10,33 @@ import { Component, ElementRef, HostListener } from '@angular/core';
 })
 export class HeaderComponent {
   constructor() {}
-  currentPage: string | number = 'home'
+  currentPage: string = 'aboutme' ;
 
+  ngOnInit(){
+    this.checkeScroll();
+  }
 
+  @HostListener('window:scroll', [])
+  checkeScroll(){
+    const sections = document.querySelectorAll('section');
 
+    sections.forEach(sections =>{
+      const sectionId = sections.getAttribute('id');
+      const sectionOffset = sections.getBoundingClientRect().top;
+
+      if(sectionOffset <= 50 && sectionId !== null){
+        this.updateCurrentPage(sectionId)
+      }
+    })
+  }
 
 
   //Header click action -------------------------------------------------
-  updateCurrentPage(page: string | number){
+  updateCurrentPage(page: string){
     this.currentPage = page
   }
 
-  scrollElement(elementId: string | number): void {
+  scrollElement(elementId: string ): void {
     if (typeof elementId === 'string') {
       const element = document.getElementById(elementId);
       const active = document.getElementsByClassName(elementId);
