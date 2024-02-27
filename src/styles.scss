@@ -47,3 +47,7 @@ body{
   position: relative;
 }
 html, body { height: 100%; }
+
+.mdc-dialog__surface {
+  background-color: rgb(37, 37, 37) !important;
+}
