@@ -2,7 +2,8 @@ import { Component, EventEmitter, Output } from '@angular/core';
 import { HeaderComponent } from '../../components/header/header.component';
 import { AboutmeComponent } from '../../components/aboutme/aboutme.component';
 import { GmpompeuComponent } from '../../components/gmpompeu/gmpompeu.component';
-import { ExperiencesComponent } from '../../components/experiences/experiences.component';
+import { ProjectsComponent } from '../../components/projects/projects.component';
+
 
 @Component({
   selector: 'app-home',
@@ -12,7 +13,7 @@ import { ExperiencesComponent } from '../../components/experiences/experiences.c
     HeaderComponent,
     AboutmeComponent,
     GmpompeuComponent,
-    ExperiencesComponent
+    ProjectsComponent
 
   ],
   templateUrl: './home.component.html',
