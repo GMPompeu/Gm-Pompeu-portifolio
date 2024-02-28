@@ -6,7 +6,11 @@
   <section id="aboutme">
     <app-aboutme></app-aboutme>
   </section>
+  @defer(on viewport){
   <section id="projects">
     <app-projects></app-projects>
   </section>
+  }@placeholder {
+    <h1> Pagina em carregamento...</h1>
+  }
 </div>
