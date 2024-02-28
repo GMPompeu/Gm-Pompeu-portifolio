@@ -17,11 +17,19 @@ export class ProjectsComponent {
         title: 'Relatório Fiscalização',
         technologiesIcon: {
           icons: [
+            'devicon-php-plain',
             'devicon-html5-plain',
             'devicon-css3-plain',
             'devicon-mysql-original',
             'devicon-javascript-plain',
           ],
+          iname:[
+            'PHP',
+            'HTMl',
+            'CSS',
+            'MySql',
+            'JavaScript'
+          ]
         },
         resume:
           'sistema que controla todas as vistorias feitas em Postos SPTrans, facilitando o acesso, cadastro, e visualização dos dados O sistema em si consiste em um formulario, onde ao final após todas suas validações serem concluidas, gera um documento com todas as informações obtidas daquele formulario',
@@ -29,5 +37,6 @@ export class ProjectsComponent {
         linkDploy: '',
       },
     },
+    
   ]);
 }

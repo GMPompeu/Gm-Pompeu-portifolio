@@ -6,7 +6,8 @@ export interface IExperiences {
     linkRepositorio: string;
     linkDploy: string;
     technologiesIcon: {
-      icons: string[];
+      icons: string[] ;
+      iname: string[] ;
     };
   };
 }

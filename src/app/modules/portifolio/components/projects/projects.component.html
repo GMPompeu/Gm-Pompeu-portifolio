@@ -6,8 +6,13 @@
       <div class="img-project">
         <img src="{{ item.preview.image }}" />
         <legend>{{ item.preview.title }}</legend>
-        <div *ngFor="let icon of item.preview.technologiesIcon.icons">
-          <i class="{{icon}}"></i>
+        <div class="icons-content">
+          <ng-container *ngFor="let icon of item.preview.technologiesIcon.icons; let j = index">
+            <div class="icon-container">
+              <i [class]="icon" [id]="icon"></i>
+              <label for="{{icon}}">{{ item.preview.technologiesIcon.iname[j] }}</label>
+            </div>
+          </ng-container>
         </div>
       </div>
       <div class="flip-card">
