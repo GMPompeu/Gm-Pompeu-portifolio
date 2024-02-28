@@ -1,13 +1,13 @@
 <header id="header">
   <nav>
     <div class="contact">
-      <a href="#">Contato</a>
+      <a>Contato</a>
     </div>
     <ul>
       <li class="0" [class.active] = "currentPage === '0'" (click)="scrollElement('0')">Home</li>
       <li class="aboutme" [class.active] = "currentPage === 'aboutme'" (click)="scrollElement('aboutme')">Sobre mim</li>
-      <li class="projects">Projetos</li>
-      <li class="skill">Habilidades</li>
+      <li class="projects" [class.active] = "currentPage === 'projects'" (click)="scrollElement('projects')">Projetos</li>
+      <li class="skill" [class.active] = "currentPage === 'skill'" (click)="scrollElement('skill')">Habilidades</li>
     </ul>
   </nav>
 </header>
