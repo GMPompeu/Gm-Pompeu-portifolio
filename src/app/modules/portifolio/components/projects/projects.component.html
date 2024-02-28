@@ -5,13 +5,15 @@
     <div class="card-content">
       <div class="img-project">
         <img src="{{ item.preview.image }}" />
-        <legend>{{item.preview.title}}</legend>
-        <span>{{item.preview.technologiesIcon.icons}}</span>
+        <legend>{{ item.preview.title }}</legend>
+        <div *ngFor="let icon of item.preview.technologiesIcon.icons">
+          <i class="{{icon}}"></i>
+        </div>
       </div>
       <div class="flip-card">
-        <p>{{item.preview.resume}}</p>
-        <a>{{item.preview.linkDploy}}</a>
-        <a>{{item.preview.linkRepositorio}}</a>
+        <p>{{ item.preview.resume }}</p>
+        <a>{{ item.preview.linkDploy }}</a>
+        <a>{{ item.preview.linkRepositorio }}</a>
       </div>
     </div>
     }
