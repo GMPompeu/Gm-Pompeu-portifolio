@@ -5,6 +5,13 @@
     <div class="card-content">
       <div class="img-project">
         <img src="{{ item.preview.image }}" />
+        <legend>{{item.preview.title}}</legend>
+        <span>{{item.preview.technologiesIcon.icons}}</span>
+      </div>
+      <div class="flip-card">
+        <p>{{item.preview.resume}}</p>
+        <a>{{item.preview.linkDploy}}</a>
+        <a>{{item.preview.linkRepositorio}}</a>
       </div>
     </div>
     }
