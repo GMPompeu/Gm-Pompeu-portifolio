@@ -1,1 +1,12 @@
-<p>projects works!</p>
+<div class="projects-content">
+  <h1>Pojetos</h1>
+  <div class="card-projects">
+    @for (item of arrayProjects(); track item;) {
+    <div class="card-content">
+      <div class="img-project">
+        <img src="{{ item.preview.image }}" />
+      </div>
+    </div>
+    }
+  </div>
+</div>

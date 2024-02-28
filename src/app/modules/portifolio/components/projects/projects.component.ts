@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 @Component({
   selector: 'app-projects',
@@ -8,5 +8,18 @@ import { Component } from '@angular/core';
   styleUrl: './projects.component.scss'
 })
 export class ProjectsComponent {
+  public arrayProjects = signal([
+    {
+     preview:{
+      image: '',
+      linkRepositorio: '',
+      linkDploy: ''
+     },
+     resume: '',
+     technologiesIcon:{
+      icons: ''
+     }
+    }
 
+  ])
 }
