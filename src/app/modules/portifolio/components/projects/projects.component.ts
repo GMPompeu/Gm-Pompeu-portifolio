@@ -37,6 +37,56 @@ export class ProjectsComponent {
         linkDploy: '',
       },
     },
-    
+    {
+      preview: {
+        image: 'assets/img/imgP/Patrimonio.jfif',
+        title: 'Monitoramento de Patrimonio',
+        technologiesIcon: {
+          icons: [
+            'devicon-php-plain',
+            'devicon-html5-plain',
+            'devicon-css3-plain',
+            'devicon-bootstrap-plain',
+            'devicon-mysql-original',
+            'devicon-javascript-plain',
+          ],
+          iname:[
+            'PHP',
+            'HTMl',
+            'CSS',
+            'Bootstrap',
+            'MySql',
+            'JavaScript'
+          ]
+        },
+        resume:
+          'Juntamente com o meu grupo em um trabalho da faculdade, onde o desafio era criar soluções a fim de minimizar problemas que temos em nossa rotina. Wm grupo decidimos um sistema que fosse capaz de armazenar todos os patrimonios de uma empresa equipamentos que a mesma tem posse, capaz de monitorar e mostrar todos os seus equipamentos, pessoas vinculadas ao equipamento e sua localidade temabém. Entre outras opções como funções de administrador',
+        linkRepositorio: '',
+        linkDploy: '',
+      },
+    },
+    {
+      preview: {
+        image: 'assets/img/imgP/WebScraping.jpeg',
+        title: 'Dash Board AGQ',
+        technologiesIcon: {
+          icons: [
+            'devicon-python-plain',
+            'devicon-selenium-original',
+            'devicon-pandas-plain'
+          ],
+          iname:[
+            'Python',
+            'Selenium',
+            'Pandas'
+          ]
+        },
+        resume:
+          'Automatizando meus relatórios com Web Scraping no Jira, armazenando dados de todos os chamados criados. Após receber esses dados e crio um dashboard no PowerBI para análise e tomada de decisões com base nas informações apresentadas. ',
+        linkRepositorio: '',
+        linkDploy: '',
+      },
+    }
+
   ]);
 }

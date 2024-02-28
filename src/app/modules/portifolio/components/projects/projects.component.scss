@@ -1,56 +1,65 @@
-.projects-content {
-  display: block;
-}
-
-legend {
-  font-size: large;
-  margin-bottom: 10px;
-}
-
-.img-project img {
-  width: 100%;
-  opacity: 0.5;
-  filter: blur(1px);
-}
-
-.card-projects {
-  position: relative;
-  margin-top: 8rem;
-  max-width: 35%;
-}
-
-.flip-card {
-  display: none;
-}
-
-.icons-content {
-  position: absolute;
-  top: 40%;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  z-index: 1;
+.card-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  margin-top: 5rem;
+  gap: 5%;
 }
 
-.icon-container,
-legend {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 10px;
+.view-resume img{
+  width: 100%;
+  opacity: 0.3;
+  filter: blur(1.2px);
+  transition: 1.2s;
 }
-
-.icons-content i {
-  font-size: 30px;
-}
-
-.icons-content label {
-  text-align: center;
-}
-
 .card-content {
-  box-shadow: blue 0px 5px 15px;
+  width: 30%;
+  position: relative;
+  cursor: pointer;
 }
+
+.image-project {
+  position: relative;
+}
+
+.icons-labels-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 35%;
+  left: 0;
+  right: 0;
+
+  transition: 1s;
+}
+.flip-card{
+  transition: 1s;
+}
+.icon-container {
+  text-align: center;
+  margin: 0 5px;
+}
+
+.icon-container i {
+  width: 50px; /* Ajuste conforme necessário */
+  height: 50px; /* Ajuste conforme necessário */
+  font-size: 24px; /* Ajuste conforme necessário */
+}
+
+.icon-container label {
+  display: block;
+  font-size: 14px;
+  color: #ffffff;
+}
+//---------------HOVER--------------------
+.view-resume:hover img{
+  opacity: 1;
+  filter: none;
+  scale: 1.4;
+}
+
+.view-resume:hover .icons-labels-container{
+  opacity: (0);
+}
+

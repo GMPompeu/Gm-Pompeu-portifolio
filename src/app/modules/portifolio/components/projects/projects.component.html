@@ -1,24 +1,26 @@
 <div class="projects-content">
-  <h1>Pojetos</h1>
-  <div class="card-projects">
+  <h1>Projetos</h1>
+  <div class="card-projects card-wrapper">
     @for (item of arrayProjects(); track item;) {
     <div class="card-content">
-      <div class="img-project">
-        <img src="{{ item.preview.image }}" />
-        <legend>{{ item.preview.title }}</legend>
-        <div class="icons-content">
-          <ng-container *ngFor="let icon of item.preview.technologiesIcon.icons; let j = index">
-            <div class="icon-container">
-              <i [class]="icon" [id]="icon"></i>
-              <label for="{{icon}}">{{ item.preview.technologiesIcon.iname[j] }}</label>
-            </div>
-          </ng-container>
+      <div class="view-resume">
+        <div class="image-project">
+          <img src="{{ item.preview.image }}" />
+          <div class="icons-labels-container">
+            <ng-container *ngFor="let icon of item.preview.technologiesIcon.icons; let j = index">
+              <div class="icon-container">
+                <i [class]="icon" [id]="icon"></i>
+                <label for="{{ icon }}">{{ item.preview.technologiesIcon.iname[j] }}</label>
+              </div>
+            </ng-container>
+          </div>
         </div>
-      </div>
-      <div class="flip-card">
-        <p>{{ item.preview.resume }}</p>
-        <a>{{ item.preview.linkDploy }}</a>
-        <a>{{ item.preview.linkRepositorio }}</a>
+        <legend>{{ item.preview.title }}</legend>
+        <div class="flip-card">
+          <p>{{ item.preview.resume }}</p>
+          <a></a>
+          <a></a>
+        </div>
       </div>
     </div>
     }
