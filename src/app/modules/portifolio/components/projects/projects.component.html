@@ -2,29 +2,21 @@
   <div class="slide-container">
     <div class="slide-content">
       <div class="card-wrapper">
-        @for (item of arrayProjects(); track $index) {
-        <div class="card">
+        <div class="card " *ngFor="let item of arrayProjects(); let i = index">
           <div class="image-content">
-            <span class="overlay"></span>
             <div class="card-image">
-              <img src="{{ item.preview.image }}" class="card-img" />
+              <img [src]="item.preview.image" class="card-img" />
             </div>
           </div>
           <div class="card-content">
             <h2 class="card-title">{{ item.preview.title }}</h2>
-            <ng-container class="info-card"
-              *ngFor="
-                let icon of item.preview.technologiesIcon.icons;
-                let Icon = index
-              "
-            >
+            <ng-container *ngFor="let icon of item.preview.technologiesIcon.icons; let j = index">
               <i [class]="icon" [id]="icon"></i>
-              <label for="{{icon}}">{{item.preview.technologiesIcon.iname[Icon]}}</label>
+              <label for="{{ icon }}">{{ item.preview.technologiesIcon.iname[j] }}</label>
             </ng-container>
-            <p class="resume">{{item.preview.resume}}</p>
+            <p class="resume">{{ item.preview.resume }}</p>
           </div>
         </div>
-        }
       </div>
     </div>
   </div>

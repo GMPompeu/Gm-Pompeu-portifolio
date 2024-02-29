@@ -1,7 +1,6 @@
-import { Component, signal } from '@angular/core';
+import {Component, signal, CUSTOM_ELEMENTS_SCHEMA, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
 import { IExperiences } from '../../interface/experiences.interface';
 import { NgFor } from '@angular/common';
-
 
 @Component({
   selector: 'app-projects',
@@ -9,8 +8,10 @@ import { NgFor } from '@angular/common';
   imports: [NgFor,],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss',
+  schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })
 export class ProjectsComponent {
+
   public arrayProjects = signal<IExperiences[]>([
     {
       preview: {
@@ -87,6 +88,7 @@ export class ProjectsComponent {
         linkRepositorio: '',
         linkDploy: '',
       },
-    }
+    },
+
   ]);
 }

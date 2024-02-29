@@ -4,14 +4,7 @@
   justify-content: center;
 }
 .slide-container{
-  max-width: 1120px;
   width: 100%;
-  background-color: #b1b1b1;
-  padding: 20px 0px;
-}
-
-.slide-content{
-  margin: 0 40px;
 }
 
 .image-content, .card-content{
@@ -25,15 +18,16 @@
 }
 
 .card{
-  width: 500px;
+  width: 300px;
   border-radius: 25px;
   background-color: rgb(27, 27, 27);
   box-shadow: rgb(130, 130, 252) 0px 3px 8px;
+  margin-left: 5%;
 }
 
 .card-image{
   position: relative;
-  width: 450px;
+  width: 280px;
 }
 .card-image .card-img{
   height: 100%;
