@@ -4,7 +4,6 @@ import {
   ElementRef,
   ViewChild,
   signal,
-  viewChild,
 } from '@angular/core';
 import { IExperiences } from '../../interface/experiences.interface';
 import { NgFor } from '@angular/common';
