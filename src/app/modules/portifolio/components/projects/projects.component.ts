@@ -86,7 +86,7 @@ export class ProjectsComponent implements AfterViewInit {
     new Swiper(this.swiperContainer.nativeElement, {
       slidesPerView: 2,
       slidesPerGroup: 2,
-      spaceBetween: 40,
+      spaceBetween: 10,
       loop: true,
       loopAddBlankSlides: true,
       pagination: {
