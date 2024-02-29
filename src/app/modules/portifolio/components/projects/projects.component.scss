@@ -5,6 +5,7 @@
 }
 .slide-container{
   width: 100%;
+  overflow: auto;
 }
 
 .image-content, .card-content{
@@ -13,21 +14,19 @@
   flex-direction: column;
   align-items: center;
 }
-.image-content{
-  row-gap: 5px;
+.card-content{
+  height: 200px;
+  overflow-y: auto;
 }
-
 .card{
-  width: 300px;
   border-radius: 25px;
   background-color: rgb(27, 27, 27);
   box-shadow: rgb(130, 130, 252) 0px 3px 8px;
-  margin-left: 5%;
 }
 
 .card-image{
   position: relative;
-  width: 280px;
+  width: 480px;
 }
 .card-image .card-img{
   height: 100%;

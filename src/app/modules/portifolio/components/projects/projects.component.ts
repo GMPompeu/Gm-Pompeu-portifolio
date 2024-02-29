@@ -1,17 +1,25 @@
-import {Component, signal, CUSTOM_ELEMENTS_SCHEMA, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  ElementRef,
+  ViewChild,
+  signal,
+  viewChild,
+} from '@angular/core';
 import { IExperiences } from '../../interface/experiences.interface';
 import { NgFor } from '@angular/common';
+import Swiper from 'swiper';
+import 'swiper/swiper-bundle.css';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [NgFor,],
+  imports: [NgFor],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss',
-  schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })
-export class ProjectsComponent {
-
+export class ProjectsComponent implements AfterViewInit {
+  @ViewChild('swiperContainer') swiperContainer!: ElementRef;
   public arrayProjects = signal<IExperiences[]>([
     {
       preview: {
@@ -25,13 +33,7 @@ export class ProjectsComponent {
             'devicon-mysql-original',
             'devicon-javascript-plain',
           ],
-          iname:[
-            'PHP',
-            'HTMl',
-            'CSS',
-            'MySql',
-            'JavaScript'
-          ]
+          iname: ['PHP', 'HTMl', 'CSS', 'MySql', 'JavaScript'],
         },
         resume:
           'Sistema que controla todas as vistorias feitas em Postos SPTrans, facilitando o acesso, cadastro, e visualização dos dados O sistema em si consiste em um formulario, onde ao final após todas suas validações serem concluidas, gera um documento com todas as informações obtidas daquele formulario',
@@ -52,14 +54,7 @@ export class ProjectsComponent {
             'devicon-mysql-original',
             'devicon-javascript-plain',
           ],
-          iname:[
-            'PHP',
-            'HTMl',
-            'CSS',
-            'Bootstrap',
-            'MySql',
-            'JavaScript'
-          ]
+          iname: ['PHP', 'HTMl', 'CSS', 'Bootstrap', 'MySql', 'JavaScript'],
         },
         resume:
           'Juntamente com o meu grupo em um trabalho da faculdade, onde o desafio era criar soluções a fim de minimizar problemas que temos em nossa rotina. Wm grupo decidimos um sistema que fosse capaz de armazenar todos os patrimonios de uma empresa equipamentos que a mesma tem posse, capaz de monitorar e mostrar todos os seus equipamentos, pessoas vinculadas ao equipamento e sua localidade temabém. Entre outras opções como funções de administrador',
@@ -75,20 +70,33 @@ export class ProjectsComponent {
           icons: [
             'devicon-python-plain',
             'devicon-selenium-original',
-            'devicon-pandas-plain'
+            'devicon-pandas-plain',
           ],
-          iname:[
-            'Python',
-            'Selenium',
-            'Pandas'
-          ]
+          iname: ['Python', 'Selenium', 'Pandas'],
         },
         resume:
-          'Automatizando meus relatórios com Web Scraping no Jira, armazenando dados de todos os chamados criados. Após receber esses dados e crio um dashboard no PowerBI para análise e tomada de decisões com base nas informações apresentadas. ',
+          'Automatizando meus relatórios com Web Scraping no Jira, armazenando dados de todos os chamados criados. Após receber esses dados e crio um dashboard no PowerBI para análise e tomada de decisões com base nas informações apresentadas',
         linkRepositorio: '',
         linkDploy: '',
       },
     },
-
   ]);
+
+  ngAfterViewInit(): void {
+    new Swiper(this.swiperContainer.nativeElement, {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 40,
+      loop: true,
+      loopAddBlankSlides: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  }
 }

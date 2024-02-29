@@ -1,23 +1,39 @@
-<div class="corpo">
-  <div class="slide-container">
-    <div class="slide-content">
-      <div class="card-wrapper">
-        <div class="card " *ngFor="let item of arrayProjects(); let i = index">
-          <div class="image-content">
-            <div class="card-image">
-              <img [src]="item.preview.image" class="card-img" />
-            </div>
+<div #swiperContainer class="slide-container swiper-container">
+  <div class="slide-content swiper-wrapper">
+    <div
+      class="card-wrapper swiper-slide"
+      *ngFor="let project of arrayProjects()"
+    >
+      <div class="card">
+        <div class="image-content">
+          <span class="overlay"></span>
+          <div class="card-image">
+            <img
+              [src]="project.preview.image"
+              alt="Card Image"
+              class="card-img"
+            />
           </div>
-          <div class="card-content">
-            <h2 class="card-title">{{ item.preview.title }}</h2>
-            <ng-container *ngFor="let icon of item.preview.technologiesIcon.icons; let j = index">
-              <i [class]="icon" [id]="icon"></i>
-              <label for="{{ icon }}">{{ item.preview.technologiesIcon.iname[j] }}</label>
-            </ng-container>
-            <p class="resume">{{ item.preview.resume }}</p>
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">{{ project.preview.title }}</h3>
+          <div
+            *ngFor="
+              let icon of project.preview.technologiesIcon.icons;
+              let i = index
+            "
+          >
+            <i [class]="icon" [id]="icon"></i>
+            <label for="{{ icon }}">{{
+              project.preview.technologiesIcon.iname[i]
+            }}</label>
           </div>
+          <p class="resume">{{ project.preview.resume }}</p>
         </div>
       </div>
     </div>
   </div>
+  <div class="swiper-pagination"></div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
 </div>
