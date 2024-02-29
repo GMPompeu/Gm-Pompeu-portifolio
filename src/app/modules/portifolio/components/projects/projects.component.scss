@@ -1,65 +1,52 @@
-.card-wrapper {
+.corpo{
   display: flex;
-  flex-wrap: wrap;
-  margin-top: 5rem;
-  gap: 5%;
-}
-
-.view-resume img{
-  width: 100%;
-  opacity: 0.3;
-  filter: blur(1.2px);
-  transition: 1.2s;
-}
-.card-content {
-  width: 30%;
-  position: relative;
-  cursor: pointer;
-}
-
-.image-project {
-  position: relative;
-}
-
-.icons-labels-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   align-items: center;
-  position: absolute;
-  bottom: 35%;
-  left: 0;
-  right: 0;
-
-  transition: 1s;
+  justify-content: center;
 }
-.flip-card{
-  transition: 1s;
-}
-.icon-container {
-  text-align: center;
-  margin: 0 5px;
+.slide-container{
+  max-width: 1120px;
+  width: 100%;
+  background-color: #b1b1b1;
+  padding: 20px 0px;
 }
 
-.icon-container i {
-  width: 50px; /* Ajuste conforme necessário */
-  height: 50px; /* Ajuste conforme necessário */
-  font-size: 24px; /* Ajuste conforme necessário */
+.slide-content{
+  margin: 0 40px;
 }
 
-.icon-container label {
-  display: block;
-  font-size: 14px;
+.image-content, .card-content{
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.image-content{
+  row-gap: 5px;
+}
+
+.card{
+  width: 500px;
+  border-radius: 25px;
+  background-color: rgb(27, 27, 27);
+  box-shadow: rgb(130, 130, 252) 0px 3px 8px;
+}
+
+.card-image{
+  position: relative;
+  width: 450px;
+}
+.card-image .card-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-title{
+  font-size: 20px;
   color: #ffffff;
 }
-//---------------HOVER--------------------
-.view-resume:hover img{
-  opacity: 1;
-  filter: none;
-  scale: 1.4;
+.resume{
+  font-size: 16px;
+  color: #b1b1b1;
+  text-align: center;
 }
-
-.view-resume:hover .icons-labels-container{
-  opacity: (0);
-}
-

@@ -2,10 +2,11 @@ import { Component, signal } from '@angular/core';
 import { IExperiences } from '../../interface/experiences.interface';
 import { NgFor } from '@angular/common';
 
+
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [NgFor],
+  imports: [NgFor,],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss',
 })
@@ -32,7 +33,7 @@ export class ProjectsComponent {
           ]
         },
         resume:
-          'sistema que controla todas as vistorias feitas em Postos SPTrans, facilitando o acesso, cadastro, e visualização dos dados O sistema em si consiste em um formulario, onde ao final após todas suas validações serem concluidas, gera um documento com todas as informações obtidas daquele formulario',
+          'Sistema que controla todas as vistorias feitas em Postos SPTrans, facilitando o acesso, cadastro, e visualização dos dados O sistema em si consiste em um formulario, onde ao final após todas suas validações serem concluidas, gera um documento com todas as informações obtidas daquele formulario',
         linkRepositorio: '',
         linkDploy: '',
       },
@@ -87,6 +88,5 @@ export class ProjectsComponent {
         linkDploy: '',
       },
     }
-
   ]);
 }
