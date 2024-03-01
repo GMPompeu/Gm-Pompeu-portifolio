@@ -1,4 +1,4 @@
-@import '../../colors/colors.scss';
+@import '../../../../../assets/colors/colors.scss';
 
 .content-resume {
   float: left;
@@ -41,12 +41,12 @@
     width: 100%;
     height: auto;
     border-radius: 50%;
-    scale: 1.4;
+    scale: 1.2;
     opacity: 0.1;
     transition: 1.5s;
     &:hover{
       opacity: 1;
-      scale: 1.5;
+      scale: 1.4;
     }
   }
 }
