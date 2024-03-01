@@ -43,10 +43,12 @@ body{
 }
 .container{
   width: 90%;
-  margin: 12rem 5rem;
+  margin: 200px 100px;
   position: absolute;
 }
-html, body { height: 100%; }
+html, body{
+  height: 100%;
+}
 
 .mdc-dialog__surface {
   background-color: rgb(37, 37, 37) !important;

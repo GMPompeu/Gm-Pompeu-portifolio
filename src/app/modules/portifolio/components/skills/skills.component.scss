@@ -1,0 +1,25 @@
+
+  .skill-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Define 5 colunas com largura igual */
+    gap: 10px; /* Espaçamento entre os itens */
+    justify-items: center; /* Alinha os itens no centro */
+  }
+  .card-skill {
+    text-align: center;
+    margin-bottom: 20px; /* Ajuste conforme necessário */
+  }
+  .icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .icons i {
+    font-size: 60px; /* Tamanho do ícone */
+  }
+
+  @media (max-width: 768px) {
+    .skill-container {
+      grid-template-columns: repeat(2, 1fr); /* Altera para 2 colunas em telas menores */
+    }
+  }

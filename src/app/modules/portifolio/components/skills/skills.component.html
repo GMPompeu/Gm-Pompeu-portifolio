@@ -1,0 +1,11 @@
+<div class="content-skill">
+  <h2>Tecnologias & FrameWorks</h2>
+  <div class="skill-container">
+    <div class="card-skill" *ngFor="let item of skill()">
+      <div class="icons">
+        <i [class]="item.content.iconSkill" [id]="item.content.iconSkill"></i>
+        <label [htmlFor]="item.content.iconSkill">{{item.content.iname}}</label>
+      </div>
+    </div>
+  </div>
+</div>

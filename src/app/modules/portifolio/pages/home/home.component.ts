@@ -4,6 +4,7 @@ import { AboutmeComponent } from '../../components/aboutme/aboutme.component';
 import { GmpompeuComponent } from '../../components/gmpompeu/gmpompeu.component';
 import { ProjectsComponent } from '../../components/projects/projects.component';
 import Swiper from 'swiper';
+import { SkillsComponent } from '../../components/skills/skills.component';
 
 
 
@@ -15,7 +16,8 @@ import Swiper from 'swiper';
     HeaderComponent,
     AboutmeComponent,
     GmpompeuComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    SkillsComponent
 
   ],
   templateUrl: './home.component.html',

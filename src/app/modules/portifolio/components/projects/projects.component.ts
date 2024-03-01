@@ -88,14 +88,6 @@ export class ProjectsComponent implements AfterViewInit {
       spaceBetween: 10,
       loop: true,
       loopAddBlankSlides: true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
     });
   }
 }
