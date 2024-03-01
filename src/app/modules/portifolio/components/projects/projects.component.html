@@ -1,38 +1,39 @@
-<div class="content-pjtcs">
-  <h1>Pojetos</h1>
-</div>
-<div #swiperContainer class="slide-container swiper-container">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide" *ngFor="let project of arrayProjects()">
-      <div class="card-wrapper">
-        <div class="card">
-          <div class="image-container">
-            <img
-              [src]="project.preview.image"
-              alt="Card Image"
-              class="card-img"
-            />
-            <div class="content-overlay">
-              <h3 class="card-title">{{ project.preview.title }}</h3>
-              <div class="icon-label-container">
-                <ng-container
-                  *ngFor="
-                    let icon of project.preview.technologiesIcon.icons;
-                    let i = index
-                  "
-                >
-                  <div class="icon-wrapper">
-                    <i [class]="icon" [id]="icon"></i>
-                    <label for="{{ icon }}">{{
-                      project.preview.technologiesIcon.iname[i]
-                    }}</label>
+<div class="content-projects">
+  <div class="content-pjtcs">
+    <h1>Pojetos</h1>
+  </div>
+  <div #swiperContainer class="slide-container swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" *ngFor="let project of arrayProjects()">
+        <div class="card-wrapper">
+          <div class="card">
+            <div class="card2">
+              <div class="image-container">
+                <img
+                  [src]="project.preview.image"
+                  alt="Card Image"
+                  class="card-img"
+                />
+                <div class="content-overlay">
+                  <h3 class="card-title">{{ project.preview.title }}</h3>
+                  <div class="icon-label-container">
+                    <ng-container
+                      *ngFor="
+                        let icon of project.preview.technologiesIcon.icons;
+                        let i = index
+                      "
+                    >
+                      <div class="icon-wrapper">
+                        <i [class]="icon" [id]="icon"></i>
+                        <label for="{{ icon }}">{{
+                          project.preview.technologiesIcon.iname[i]
+                        }}</label>
+                      </div>
+                    </ng-container>
                   </div>
-                </ng-container>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="content-container">
-            <p class="resume">{{ project.preview.resume }}</p>
           </div>
         </div>
       </div>
