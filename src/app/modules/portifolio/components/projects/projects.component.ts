@@ -48,7 +48,7 @@ export class ProjectsComponent implements AfterViewInit {
         },
         resume:
           'Sistema que controla todas as vistorias feitas em Postos SPTrans, facilitando o acesso, cadastro, e visualização dos dados O sistema em si consiste em um formulario, onde ao final após todas suas validações serem concluidas, gera um documento com todas as informações obtidas daquele formulario',
-        linkRepositorio: '',
+        linkRepositorio: 'https://github.com/GMPompeu/RFC-Fiscalizacao-SPTrans',
         linkDploy: '',
       },
     },

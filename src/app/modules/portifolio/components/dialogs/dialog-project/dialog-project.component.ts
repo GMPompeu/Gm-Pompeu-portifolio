@@ -1,4 +1,6 @@
-import { Component, signal } from '@angular/core';
+import { Component, Inject } from '@angular/core';
+import { MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { IExperiences } from '../../../interface/experiences.interface';
 
 @Component({
   selector: 'app-dialog-project',
@@ -8,5 +10,6 @@ import { Component, signal } from '@angular/core';
   styleUrl: './dialog-project.component.scss'
 })
 export class DialogProjectComponent {
-  
+
+  constructor(@Inject(MAT_DIALOG_DATA) public data : IExperiences){}
 }
