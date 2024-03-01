@@ -1,67 +1,58 @@
 @import '../../../../../../assets/colors/colors.scss';
 
-.dialog-content{
-  background-color: black;
-}
 .content-coluna{
   width: 90%;
   padding: 20px;
   height: 85vh;
 }
 
-.content-coluna .content{
+.content{
   padding: 0 30px;
-  border-left: solid 2px rgb(202, 202, 202);
+  border-left: solid 2px $dialog-border;
+  .box{
+    width: 90%;
+    position: relative;
+    padding: 10px;
+    border: solid 1px $dialog-border;
+    border-radius: 5px;
+    cursor: pointer;
+    transition:all 0.4s;
+    margin-bottom: 15px;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      right: calc(100% + 22px);
+      top: 0;
+      background-color: $blue-contents;
+      border: solid 2px #fff;
+    }
+    &:hover{
+      box-shadow: 1px 1px 10px gray;
+    }
+    h4{
+      font-size: 16px;
+      font-weight: bold;
+      color: $blue-contents-ligth;
+    }
+    h3{
+      font-size: 18px;
+      color: #fff;
+    }
+    p{
+      opacity: 0.8;
+      color: #fff;
+    }
+  }
+}
+.titulo{
+  h2{
+    font-size: 25px;
+    color: #ffffff ;
+  }
 }
 
-.content-coluna .content .box{
-  position: relative;
-  padding: 10px;
-  border: solid 1px rgb(202, 202, 202);
-  border-radius: 5px;
-  cursor: pointer;
-  transition:all 0.4s;
-  margin-bottom: 15px;
-}
 
-.content-coluna .content .box::before{
-  content: '';
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  right: calc(100% + 22px);
-  top: 0;
-  background-color: #043E8B;
-  border: solid 2px #fff;
-}
-
-.box:hover{
-  box-shadow: 1px 1px 10px gray;
-}
-
-.box{
-  width: 90%;
-}
-
-.titulo h2{
-  font-size: 25px;
-  color: #ffffff ;
-}
-
-.box h4{
-  font-size: 16px;
-  font-weight: bold;
-  color: #0754b8;
-}
-
-.box h3{
-  font-size: 18px;
-  color: #fff;
-}
-
-.box p{
-  opacity: 0.8;
-  color: #fff;
-}
 
