@@ -1,19 +1,80 @@
-.resume {
-  overflow: hidden;
-}
+@import '../../colors/colors.scss';
 
 .content-resume {
   float: left;
-  width: 50%;
-  padding-right: 20px;
+  width: 60%;
+}
+.resume {
+  overflow: hidden;
+  padding: 0px 100px;
+  width: 100%;
+  h1{
+    color: #fff;
+    font-family: 'Open Sans', sans-serif ;
+    margin: 15% 0 5% 0;
+    font-weight: bold;
+    font-size: 70px;
+    transform: scaleY(1.5);
+  }
+  h2{
+    color: $blue-contents;
+    font-size: 50px;
+    transform: scaleY(1.2);
+  }
+  p{
+    margin-top: 20px;
+    color: $grey-p;
+    font-size: 14px;
+  }
+  .area{
+    color: #ffffff;
+    font-size: 20px;
+    top: 0;
+    letter-spacing: 16px;
+  }
 }
 
 .me {
   float: right;
-  width: 50%;
+  width: 40%;
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    scale: 1.4;
+    opacity: 0.1;
+    transition: 1.5s;
+    &:hover{
+      opacity: 1;
+      scale: 1.5;
+    }
+  }
 }
 
-.me img {
-  width: 60%;
-  height: auto;
+.actions{
+  ul{
+  display: flex;
+  list-style: none;
+  }
+  li{
+    margin-top: 4%;
+    margin-right: 2%;
+    }
+  a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 100px;
+    border: solid 3px $blue-contents;
+    }
+  .cv{
+      background-color: $blue-contents;
+      &:hover{
+        background-color: transparent;
+      }
+    }
+    .linkedin:hover{
+      background-color: #043E8B;
+    }
 }
+
