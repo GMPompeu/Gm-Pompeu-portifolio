@@ -3,12 +3,14 @@ import {
   Component,
   ElementRef,
   ViewChild,
-  signal,
 } from '@angular/core';
 import { IExperiences } from '../../interface/experiences.interface';
 import { NgFor } from '@angular/common';
 import Swiper from 'swiper';
 import 'swiper/swiper-bundle.css';
+import { MatDialog } from '@angular/material/dialog';
+import { DialogProjectComponent } from '../dialogs/dialog-project/dialog-project.component';
+import { signal } from '@angular/core';
 
 @Component({
   selector: 'app-projects',
@@ -19,6 +21,16 @@ import 'swiper/swiper-bundle.css';
 })
 export class ProjectsComponent implements AfterViewInit {
   @ViewChild('swiperContainer') swiperContainer!: ElementRef;
+
+  constructor(public dialog: MatDialog) {}
+
+  public viewProject(resume: IExperiences) {
+    console.log(resume)
+    this.dialog.open(DialogProjectComponent,{
+      data: resume
+    })
+  }
+
   public arrayProjects = signal<IExperiences[]>([
     {
       preview: {
