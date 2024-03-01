@@ -10,7 +10,6 @@ body{
     color: #fff;
     user-select: none;
 }
-
 .container{
   max-width: 100%;
   margin: 0 auto;
@@ -28,4 +27,7 @@ body{
 
 ::-webkit-scrollbar-track {
     opacity: 0;
+}
+.mdc-dialog__surface {
+  background-color: $color-dialog !important;
 }

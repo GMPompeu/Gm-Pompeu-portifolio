@@ -1,13 +1,12 @@
-*{
-  font-family: 'Poppins', sans-serif;
+@import '../../../../../../assets/colors/colors.scss';
+
+.dialog-content{
+  background-color: black;
 }
-
-
 .content-coluna{
   width: 90%;
   padding: 20px;
   height: 85vh;
-
 }
 
 .content-coluna .content{
