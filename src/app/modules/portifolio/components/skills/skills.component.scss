@@ -1,25 +1,35 @@
-
-  .skill-container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr); /* Define 5 colunas com largura igual */
-    gap: 10px; /* Espaçamento entre os itens */
-    justify-items: center; /* Alinha os itens no centro */
-  }
-  .card-skill {
-    text-align: center;
-    margin-bottom: 20px; /* Ajuste conforme necessário */
-  }
-  .icons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .icons i {
-    font-size: 60px; /* Tamanho do ícone */
-  }
-
-  @media (max-width: 768px) {
-    .skill-container {
-      grid-template-columns: repeat(2, 1fr); /* Altera para 2 colunas em telas menores */
+@import '../../../../../assets/colors/colors.scss';
+.content-skill{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px 20px 0px;
+  .title{
+    h2{
+    font-size: 50px;
     }
   }
+  .skill-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .card-skill{
+      margin: 70px 100px 0px 100px;
+      text-align: center;
+      .icons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        i{
+          font-size: 50px;
+        }
+        label{
+          font-size: 20px;
+        }
+        &:hover{
+          color: $gray-p;
+        }
+      }
+    }
+  }
+}
