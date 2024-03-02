@@ -1,7 +1,16 @@
 <div class="project-view">
   <div class="data">
-    <img [src]="data.preview.image" />
-    <span>{{ data.preview.resume }}</span>
-    <a [href]="data.preview.linkRepositorio" target="_blank">GitHub</a>
+    <div class="image">
+      <img [src]="data.preview.image" />
+    </div>
+    <div class="info">
+      <h2>{{ data.preview.title }}</h2>
+      <span>{{ data.preview.resume }}</span>
+      <div class="links">
+        <a [href]="data.preview.linkRepositorio" target="_blank"><i class="devicon-github-original"></i>GitHub</a>
+        <span *ngIf="data.preview.linkDploy === ''">Deploy Inativo</span>
+        <a *ngIf="data.preview.linkDploy" [href]="data.preview.linkDploy">Deploy</a>
+      </div>
+    </div>
   </div>
 </div>

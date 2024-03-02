@@ -1,0 +1,41 @@
+@import '../../../../../../assets/colors/colors.scss';
+
+.project-view{
+    padding: 50px;
+   .data{
+    .image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 25px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .info{
+        text-align: center;
+        h2{
+            font-size: 25px;
+        }
+        span{
+            font-size: 14px;
+            color: $grey-p ;
+        }
+        .links{
+            margin-top: 20px;
+            a{
+                margin-left: 20px;
+                font-style: none;
+                color: #fff;
+                background-color: $blue-contents;
+                padding: 10px;
+                border-radius: 10px;
+            }
+            span{
+                margin-left: 10px;
+            }
+        }
+    }
+   }
+}
