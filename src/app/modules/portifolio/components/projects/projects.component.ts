@@ -69,7 +69,7 @@ export class ProjectsComponent implements AfterViewInit {
         },
         resume:
           'Juntamente com o meu grupo em um trabalho da faculdade, onde o desafio era criar soluções a fim de minimizar problemas que temos em nossa rotina. Wm grupo decidimos um sistema que fosse capaz de armazenar todos os patrimonios de uma empresa equipamentos que a mesma tem posse, capaz de monitorar e mostrar todos os seus equipamentos, pessoas vinculadas ao equipamento e sua localidade temabém. Entre outras opções como funções de administrador',
-        linkRepositorio: '',
+        linkRepositorio: 'https://github.com/GMPompeu/Monitorar-Patrimonio',
         linkDploy: '',
       },
     },
