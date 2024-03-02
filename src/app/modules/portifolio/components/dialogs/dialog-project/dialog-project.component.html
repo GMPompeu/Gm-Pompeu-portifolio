@@ -9,7 +9,7 @@
       <div class="links">
         <a [href]="data.preview.linkRepositorio" target="_blank"><i class="devicon-github-original"></i>GitHub</a>
         <span *ngIf="data.preview.linkDploy === ''">Deploy Inativo</span>
-        <a *ngIf="data.preview.linkDploy" [href]="data.preview.linkDploy">Deploy</a>
+        <a *ngIf="data.preview.linkDploy" [href]="data.preview.linkDploy" target="_blank">Deploy</a>
       </div>
     </div>
   </div>

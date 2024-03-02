@@ -23,19 +23,24 @@
             color: $grey-p ;
         }
         .links{
-            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0px 0px 0px;
             a{
-                margin-left: 20px;
-                font-style: none;
                 color: #fff;
                 background-color: $blue-contents;
                 padding: 10px;
                 border-radius: 10px;
+                text-decoration: none;
+                display: flex; 
+                align-items: center; 
+                margin: 0px 20px 0px 20px;
+                i{
+                font-size: 30px;
+                }
             }
-            span{
-                margin-left: 10px;
             }
         }
     }
-   }
 }
