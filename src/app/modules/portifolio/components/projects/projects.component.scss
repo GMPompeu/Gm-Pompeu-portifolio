@@ -2,6 +2,16 @@
 
 .content-projects{
   padding: 50px 100px 0px 100px;
+  .content-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    h1{
+      font-size: 50px;
+      letter-spacing: 5px;
+    }
+  }
 }
 
 .slide-container {
@@ -10,10 +20,6 @@
   padding: 10px;
   overflow: hidden;
   padding: 40px 40px;
-
-  .content-title{
-    text-align: center;
-  }
 
   .card {
     position: relative;
