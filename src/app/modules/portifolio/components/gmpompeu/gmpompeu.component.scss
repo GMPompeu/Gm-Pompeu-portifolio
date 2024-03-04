@@ -2,7 +2,7 @@
 
 .resume {
   overflow: hidden;
-  padding: 2vw 50px;
+  padding: 2vw 100px;
   width: 100%;
   .content-resume {
     width: 60%;
@@ -82,7 +82,9 @@
       width: 100%;
       float: none;
       text-align: center;
-      margin: 0;
+      img{
+        width: 40%;
+      }
     }
     padding: 20px;
     .content-resume {
