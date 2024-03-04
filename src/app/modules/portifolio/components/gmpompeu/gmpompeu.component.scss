@@ -1,80 +1,102 @@
 @import '../../../../../assets/colors/colors.scss';
 
-.content-resume {
-  float: left;
-  width: 60%;
-}
 .resume {
   overflow: hidden;
-  padding: 0px 100px;
+  padding: 2vw 50px;
   width: 100%;
-  h1{
-    color: #fff;
-    font-family: 'Open Sans', sans-serif ;
-    margin: 15% 0 5% 0;
-    font-weight: bold;
-    font-size: 70px;
-    transform: scaleY(1.5);
-  }
-  h2{
-    color: $blue-contents;
-    font-size: 50px;
-    transform: scaleY(1.2);
-  }
-  p{
-    margin-top: 20px;
-    color: $gray-p;
-    font-size: 14px;
-  }
-  .area{
-    color: #ffffff;
-    font-size: 20px;
-    top: 0;
-    letter-spacing: 16px;
-  }
-}
-
-.me {
-  float: right;
-  width: 40%;
-  img {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
-    scale: 1.2;
-    opacity: 0.1;
-    transition: 1.5s;
-    &:hover{
-      opacity: 1;
-      scale: 1.4;
+  .content-resume {
+    width: 60%;
+    float: left;
+    h1 {
+      color: #fff;
+      font-family: 'Open Sans', sans-serif;
+      margin: 15% 0 6% 0;
+      font-weight: bold;
+      font-size: 5vw;
+      transform: scaleY(1.5);
     }
-  }
-}
-
-.actions{
-  ul{
-  display: flex;
-  list-style: none;
-  }
-  li{
-    margin-top: 4%;
-    margin-right: 2%;
+    h2 {
+      color: $blue-contents;
+      font-size: 4vw;
+      transform: scaleY(1.2);
     }
-  a{
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 100px;
-    border: solid 3px $blue-contents;
+    p {
+      margin-top: 20px;
+      color: $gray-p;
+      font-size: 16px;
     }
-  .cv{
-      background-color: $blue-contents;
-      &:hover{
-        background-color: transparent;
+    .area {
+      color: #ffffff;
+      font-size: 2.5vw;
+      top: 0;
+      letter-spacing: 0.8vw;
+    }
+    .actions {
+      ul {
+        display: flex;
+        list-style: none;
+      }
+      li {
+        margin-top: 4%;
+        margin-right: 2%;
+      }
+      a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 100px;
+        border: solid 3px $blue-contents;
+      }
+      .cv {
+        background-color: $blue-contents;
+        &:hover {
+          background-color: transparent;
+        }
+      }
+      .linkedin:hover {
+        background-color: #043E8B;
       }
     }
-    .linkedin:hover{
-      background-color: #043E8B;
+  }
+  .me {
+    width: 40%;
+    float: right;
+    text-align: center;
+    margin-top: 20px;
+    img {
+      width: 70%;
+      height: auto;
+      border-radius: 50%;
+      scale: 1.2;
+      opacity: 0.1;
+      transition: 1.5s;
+      &:hover {
+        opacity: 1;
+        scale: 1.4;
+      }
     }
+  }
+  @media (max-width: 600px) {
+    .content-resume,
+    .me {
+      width: 100%;
+      float: none;
+      text-align: center;
+      margin: 0;
+    }
+    padding: 20px;
+    .content-resume {
+      h1 {
+        font-size: 25px;
+        margin: 10% 0 3% 0;
+      }
+      h2 {
+        font-size: 18px;
+      }
+      .area {
+        font-size: 14px;
+        letter-spacing: 2px;
+      }
+    }
+  }
 }
-
