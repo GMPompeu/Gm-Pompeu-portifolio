@@ -38,7 +38,7 @@ export class HeaderComponent {
 
   scrollElement(elementId: string): void {
     const element = document.getElementById(elementId);
-    if (elementId === '0') {
+    if (elementId === 'zero') {
       this.updateCurrentPage(elementId);
       window.scrollTo({ top: 0, behavior: 'smooth' });
     } else if (element) {
