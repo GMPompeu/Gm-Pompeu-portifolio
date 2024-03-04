@@ -1,46 +1,48 @@
 @import '../../../../../../assets/colors/colors.scss';
 
 .project-view{
-    padding: 40px;
    .data{
+    max-width: 100%;
+    padding: 10px;
     .image{
         display: flex;
         align-items: center;
         justify-content: center;
         margin-bottom: 20px;
         img{
-            max-width: 100%;
-            max-height: 100%;
+          max-width: 70%;
+          max-height: 70%;
         }
     }
     .info{
-        text-align: center;
-        h2{
-            font-size: 25px;
+      text-align: center;
+      h2{
+        font-size: 25px;
+      }
+      span{
+        font-size: 14px;
+        color: $gray-p ;
+      }
+      .links{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0px 0px 0px;
+        a{
+          color: #fff;
+          background-color: $blue-contents;
+          padding: 10px;
+          border-radius: 10px;
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          margin: 0px 20px 0px 20px;
+          i{
+            font-size: 30px;
+          }
         }
-        span{
-            font-size: 14px;
-            color: $gray-p ;
-        }
-        .links{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 20px 0px 0px 0px;
-            a{
-                color: #fff;
-                background-color: $blue-contents;
-                padding: 10px;
-                border-radius: 10px;
-                text-decoration: none;
-                display: flex;
-                align-items: center;
-                margin: 0px 20px 0px 20px;
-                i{
-                font-size: 30px;
-                }
-            }
-            }
-        }
+      }
     }
+  }
 }

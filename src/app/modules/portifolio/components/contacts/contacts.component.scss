@@ -20,14 +20,17 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-
       .contacts-h {
         display: flex;
         margin-top: 20px;
-
         a {
           margin: 0 15px;
+          color: #fff;
           cursor: pointer;
+          &:hover{
+            color: $gray-p;
+            scale: 1.05;
+          }
         }
         i{
           font-size: 30px;
