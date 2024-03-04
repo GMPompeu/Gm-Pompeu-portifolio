@@ -1,17 +1,15 @@
-<div class="center">
-  <div class="content-skill">
-    <div class="title">
-      <h1>Tecnologias & FrameWorks</h1>
-      <p>Conhecimentos onde mais me destaco</p>
-    </div>
-    <div class="skill-container">
-      <div class="card-skill" *ngFor="let item of skill()">
-        <div class="icons">
-          <i [class]="item.content.iconSkill" [id]="item.content.iconSkill"></i>
-          <label [htmlFor]="item.content.iconSkill">{{
-            item.content.iname
-          }}</label>
-        </div>
+<div class="content-skill">
+  <div class="title">
+    <h1>Tecnologias & FrameWorks</h1>
+    <p>Conhecimentos onde mais me destaco</p>
+  </div>
+  <div class="skill-container">
+    <div class="card-skill" *ngFor="let item of skill()">
+      <div class="icons">
+        <i [class]="item.content.iconSkill" [id]="item.content.iconSkill"></i>
+        <label [htmlFor]="item.content.iconSkill">{{
+          item.content.iname
+        }}</label>
       </div>
     </div>
   </div>

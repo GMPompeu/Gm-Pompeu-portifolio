@@ -25,7 +25,7 @@ export class HeaderComponent {
       const sectionId = sections.getAttribute('id');
       const sectionOffset = sections.getBoundingClientRect().top;
 
-      if (sectionOffset <= 200 && sectionId !== null) {
+      if (sectionOffset <= 300 && sectionId !== null) {
         this.updateCurrentPage(sectionId);
       }
     });

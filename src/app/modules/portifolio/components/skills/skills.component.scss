@@ -1,9 +1,5 @@
 @import '../../../../../assets/colors/colors.scss';
 .content-skill{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px 0px 0px 0px;
   .title{
     text-align: center;
     h1{
@@ -14,30 +10,30 @@
       font-size: 14px;
     }
   }
-  .skill-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    .card-skill{
-      margin: 40px 80px 0px 100px;
-      text-align: center;
+}
+.skill-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  .card-skill{
+    margin: 40px 80px 0px 100px;
+    text-align: center;
+    cursor: pointer;
+    .icons{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       cursor: pointer;
-      .icons{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+      i{
+        font-size: 50px;
         cursor: pointer;
-        i{
-          font-size: 50px;
-          cursor: pointer;
-        }
-        label{
-          font-size: 20px;
-          cursor: pointer;
-        }
-        &:hover{
-          color: $gray-p;
-        }
+      }
+      label{
+        font-size: 20px;
+        cursor: pointer;
+      }
+      &:hover{
+        color: $gray-p;
       }
     }
   }
