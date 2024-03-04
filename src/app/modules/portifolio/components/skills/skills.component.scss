@@ -3,10 +3,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px 20px 20px 0px;
+  padding: 10px 0px 0px 0px;
   .title{
+    text-align: center;
     h1{
-    font-size: 50px;
+    font-size: 30px;
+    }
+    p{
+      color: $gray-p;
+      font-size: 14px;
     }
   }
   .skill-container{
@@ -14,17 +19,21 @@
     flex-wrap: wrap;
     justify-content: center;
     .card-skill{
-      margin: 70px 100px 0px 100px;
+      margin: 40px 80px 0px 100px;
       text-align: center;
+      cursor: pointer;
       .icons{
         display: flex;
         flex-direction: column;
         align-items: center;
+        cursor: pointer;
         i{
           font-size: 50px;
+          cursor: pointer;
         }
         label{
           font-size: 20px;
+          cursor: pointer;
         }
         &:hover{
           color: $gray-p;

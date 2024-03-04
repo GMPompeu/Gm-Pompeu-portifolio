@@ -1,7 +1,7 @@
 <header id="header">
   <nav>
     <div class="contact">
-      <a>Contato</a>
+      <a class="contact" [class.active]="currentPage === 'contact'" (click)="scrollElement('contact')">Contato</a>
     </div>
     <ul>
       <li class="0" [class.active] = "currentPage === '0'" (click)="scrollElement('0')">Home</li>
