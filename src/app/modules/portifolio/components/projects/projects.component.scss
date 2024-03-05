@@ -1,93 +1,115 @@
 @import '../../../../../assets/colors/colors.scss';
 
 .content-projects{
-  padding: 50px 100px 0px 100px;
   .content-title{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 50px;
     h1{
       font-size: 30px;
       letter-spacing: 5px;
     }
   }
-}
+  .slide-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 10vw 40px;
 
-.slide-container {
-  width: 100%;
-  height: 100%;
-  padding: 10px;
-  overflow: hidden;
-  padding: 40px 40px;
-
-  .card {
-    position: relative;
-    width: 90%;
-    border-radius: 25px;
-    background-color: $card-background;
-    box-shadow: 0px 3px 18px $card-shadow;
-    padding: 10px;
-    cursor: pointer;
-
-    .card-img {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-      width: 100%;
-      object-fit: contain;
+    .card {
+      position: relative;
+      width: 90%;
       border-radius: 25px;
-      transition: 1.2s;
-      opacity: 0.2;
-    }
-    .content-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      transition: 1.2s;
-    }
-    .card-title {
-      font-size: 24px;
-    }
-    .icon-label-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 10px;
+      background-color: $card-background;
+      box-shadow: 0px 3px 18px $card-shadow;
+      padding: 10px;
+      cursor: pointer;
 
-    .icon-wrapper {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin: 0 10px;
-        i{
-          font-size: 20px;
+      .card-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100;
+        width: 100%;
+        object-fit: contain;
+        border-radius: 25px;
+        transition: 1.2s;
+        opacity: 0.2;
+      }
+      .content-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        transition: 1.2s;
+      }
+      .card-title {
+        font-size: 2vw;
+      }
+      .icon-label-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1vw;
+
+      .icon-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 1vw;
+          i{
+            font-size: 2vw;
+          }
+          label{
+            font-size: 1vw;
+            margin-top: 5px;
+          }
         }
-        label{
-          font-size: 14px;
-          margin-top: 5px;
+      }
+      &:hover{
+        .card-img{
+          opacity: 1;
+          scale: 1.1;
+        }
+        .content-overlay{
+          opacity: 0;
         }
       }
     }
-    &:hover{
-      .card-img{
-        opacity: 1;
-        scale: 1.1;
+  }
+  @media(max-width: 600px){
+    padding: 0;
+    .content-title{
+      h1{
+        font-size: 25px;
       }
-      .content-overlay{
-        opacity: 0;
+    }
+    .slide-container{
+      .card{
+        width: 100%;
+        padding: 5px;
+         .content-overlay{
+          .card-title{
+            font-size: 14px;
+          }
+          .icon-wrapper{
+            width: 50%;
+            margin: 0;
+            i{
+              font-size: 18px;
+            }
+            label{
+              display: none;
+            }
+          }
+        }
       }
     }
   }
 }
-
-
-
