@@ -44,6 +44,20 @@ nav{
       }
     }
   }
+  @media(max-width: 600px){
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    ul{
+      display: none;
+    }
+    .contact{
+      a{
+        margin-left: 0;
+      }
+    }
+  }
 }
 
 
