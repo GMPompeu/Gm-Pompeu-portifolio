@@ -88,6 +88,15 @@
     }
     padding: 20px;
     .content-resume {
+      .actions{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a{
+          padding: 5px;
+          margin: 0 10px 0 10px;
+        }
+      }
       h1 {
         font-size: 25px;
         margin: 10% 0 3% 0;
@@ -98,6 +107,9 @@
       .area {
         font-size: 14px;
         letter-spacing: 2px;
+      }
+      p{
+        font-size: 12px;
       }
     }
   }
