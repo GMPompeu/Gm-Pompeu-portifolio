@@ -87,7 +87,7 @@ export class ProjectsComponent implements AfterViewInit {
         },
         resume:
           'Automatizando meus relatórios com Web Scraping no Jira, armazenando dados de todos os chamados criados. Após receber esses dados e crio um dashboard no PowerBI para análise e tomada de decisões com base nas informações apresentadas',
-        linkRepositorio: '',
+        linkRepositorio: 'https://github.com/GMPompeu/WebScraping-Jira/tree/main',
         linkDploy: '',
       },
     },
