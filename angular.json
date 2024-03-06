@@ -40,12 +40,12 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
+                  "maximumWarning": "1000kb",
                   "maximumError": "1mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
+                  "maximumWarning": "500kb",
                   "maximumError": "4kb"
                 }
               ],
@@ -95,12 +95,6 @@
               "src/styles.scss"
             ],
             "scripts": []
-          }
-        },
-        "deploy": {
-          "builder": "angular-cli-ghpages:deploy",
-          "options": {
-            "baseHref": "/Gm-Pompeu-portifolio/"
           }
         }
       }
