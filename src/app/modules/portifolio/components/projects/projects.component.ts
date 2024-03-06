@@ -95,8 +95,7 @@ export class ProjectsComponent implements AfterViewInit {
 
   ngAfterViewInit(): void {
     new Swiper(this.swiperContainer.nativeElement, {
-      slidesPerView: 2,
-      slidesPerGroup: 2,
+      slidesPerView: 3,
       spaceBetween: 10,
       loop: true,
       loopAddBlankSlides: true,
