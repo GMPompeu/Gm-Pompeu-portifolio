@@ -1,13 +1,10 @@
 import {
-  AfterViewInit,
   Component,
   ElementRef,
   ViewChild,
 } from '@angular/core';
 import { IExperiences } from '../../interface/experiences.interface';
 import { NgFor } from '@angular/common';
-import Swiper from 'swiper';
-import 'swiper/swiper-bundle.css';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogProjectComponent } from '../dialogs/dialog-project/dialog-project.component';
 import { signal } from '@angular/core';
@@ -19,8 +16,7 @@ import { signal } from '@angular/core';
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss',
 })
-export class ProjectsComponent implements AfterViewInit {
-  @ViewChild('swiperContainer') swiperContainer!: ElementRef;
+export class ProjectsComponent{
 
   constructor(public dialog: MatDialog) {}
 
@@ -92,13 +88,4 @@ export class ProjectsComponent implements AfterViewInit {
       },
     },
   ]);
-
-  ngAfterViewInit(): void {
-    new Swiper(this.swiperContainer.nativeElement, {
-      slidesPerView: 3,
-      spaceBetween: 10,
-      loop: true,
-      loopAddBlankSlides: true,
-    });
-  }
 }
