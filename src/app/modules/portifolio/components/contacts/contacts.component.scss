@@ -54,4 +54,26 @@
       }
     }
   }
+  @media(max-width: 600px){
+    h1{
+      font-size: 25px;
+    }
+    .icons-contacs{
+      .contacts{
+        .contacts-h{
+          i{
+            font-size: 30px;
+          }
+        }
+        .contacts-v{
+          i{
+            font-size: 20px;
+          }
+          span{
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
 }
