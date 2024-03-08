@@ -4,12 +4,9 @@ import { MatDialogModule } from '@angular/material/dialog';
 @Component({
   selector: 'app-dialog-resume',
   standalone: true,
-  imports: 
-  [
-    MatDialogModule
-  ],
+  imports: [MatDialogModule],
   templateUrl: './dialog-resume.component.html',
-  styleUrl: './dialog-resume.component.scss'
+  styleUrl: './dialog-resume.component.scss',
 })
 export class DialogResumeComponent {
 

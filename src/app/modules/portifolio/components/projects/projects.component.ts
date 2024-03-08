@@ -21,10 +21,12 @@ export class ProjectsComponent{
   constructor(public dialog: MatDialog) {}
 
   public viewProject(resume: IExperiences) {
-    console.log(resume)
     this.dialog.open(DialogProjectComponent,{
       data: resume
     })
+  }
+  public closeDialog(){
+    this.dialog.closeAll
   }
 
   public arrayProjects = signal<IExperiences[]>([

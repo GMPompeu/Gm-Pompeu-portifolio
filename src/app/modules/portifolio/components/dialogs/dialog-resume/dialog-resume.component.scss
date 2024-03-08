@@ -48,9 +48,23 @@
   }
 }
 .titulo{
+  display: flex;
   h2{
     font-size: 25px;
     color: #ffffff ;
+  }
+  button{
+   position: absolute;
+   right: 10px;
+   padding: 10px 25px;
+   color: #fff;
+   border: none;
+   border-radius: 25px;
+   cursor: pointer;
+   background-color: rgb(197, 4, 4);
+   &:hover{
+    background-color: rgb(167, 3, 3) ;
+   }
   }
 }
 

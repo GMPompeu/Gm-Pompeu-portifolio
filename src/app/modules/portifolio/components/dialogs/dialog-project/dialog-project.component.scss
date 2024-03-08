@@ -4,6 +4,19 @@
    .data{
     max-width: 100%;
     padding: 10px;
+    button{
+      position: absolute;
+      right: 10px;
+      padding: 10px 25px;
+      color: #fff;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      background-color: rgb(197, 4, 4);
+      &:hover{
+       background-color: rgb(167, 3, 3) ;
+      }
+    }
     .image{
       display: flex;
       align-items: center;
