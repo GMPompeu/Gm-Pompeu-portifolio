@@ -68,12 +68,6 @@
       height: auto;
       border-radius: 50%;
       scale: 1.2;
-      opacity: 0.8;
-      transition: 1.5s;
-      &:hover {
-        opacity: 1;
-        scale: 1.4;
-      }
     }
   }
   @media (max-width: 600px) {
